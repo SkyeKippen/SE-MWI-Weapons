@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CubeBlocks>
+        <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+            <Id>
+                <TypeId>ConveyorSorter</TypeId>
+                <SubtypeId>MWI_MEL_04_Mk1</SubtypeId>
+            </Id>
+            <DisplayName>MEL-04 Mk1</DisplayName>
+            <Description>Optional Text Here</Description>
+            <Icon>Textures\GUI\Icons\Cubes\MWI_MEL_04_Mk1.dds</Icon>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="5" y="2" z="5" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\large\MWI_MEL_04_Mk1.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="30" />
+                <Component Subtype="Construction" Count="50" />
+                <Component Subtype="Motor" Count="35" />
+                <Component Subtype="Computer" Count="100" />
+                <Component Subtype="Construction" Count="20" />
+                <Component Subtype="SteelPlate" Count="50" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="3" />
+            </MountPoints>
+            <BlockPairName>MWI_MEL_04_Mk1</BlockPairName>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>15</BuildTimeSeconds>
+            <WeaponDefinitionId Subtype="MWI_MEL_04_Mk1" />
+            <ResourceSinkGroup>Defense</ResourceSinkGroup>
+        </Definition>
+    </CubeBlocks>
+</Definitions>

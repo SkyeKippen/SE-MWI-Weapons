@@ -15,25 +15,26 @@ using static Scripts.Structure.WeaponDefinition.HardPointDef.LoadingDef;
 namespace Scripts {   
     partial class Parts {
         // Don't edit above this line
-        WeaponDefinition MWI_SKC_02_Mk1 => new WeaponDefinition
+        WeaponDefinition MWI_MEL_04_Mk1 => new WeaponDefinition
         {
             Assignments = new ModelAssignmentsDef
             {
                 MountPoints = new[] {
                     new MountPointDef {
-                        SubtypeId = "MWI_SKC_02_Mk1", // Block Subtypeid. Your Cubeblocks contain this information
+                        SubtypeId = "MWI_MEL_04_Mk1", // Block Subtypeid. Your Cubeblocks contain this information
                         SpinPartId = "None", // For weapons with a spinning barrel such as Gatling Guns. Subpart_Boomsticks must be written as Boomsticks.
                         MuzzlePartId = "elevation", // The subpart where your muzzle empties are located. This is often the elevation subpart. Subpart_Boomsticks must be written as Boomsticks.
                         AzimuthPartId = "azimuth", // Your Rotating Subpart, the bit that moves sideways.
                         ElevationPartId = "elevation", // Your Elevating Subpart, that bit that moves up.
                         DurabilityMod = 0.25f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
-                        IconName = "Cubes\\MWI_SKC_02_Mk1.dds" // Overlay for block inventory slots, like reactors, refineries, etc.  Looks in mod root folder\Textures\GUI\Icons\
+                        IconName = "Cubes\\MWI_MEL_04_Mk1.dds" // Overlay for block inventory slots, like reactors, refineries, etc.  Looks in mod root folder\Textures\GUI\Icons\
                     },
                     
                  },
                 Muzzles = new[] {
-                    "muzzle_projectile_01",
-                    "muzzle_projectile_02", // Where your Projectiles spawn. Use numbers not Letters. IE Muzzle_01 not Muzzle_A
+                    "muzzle_01",
+                    "muzzle_02", 
+                    "muzzle_03", // Where your Projectiles spawn. Use numbers not Letters. IE Muzzle_01 not Muzzle_A
                 },
                 Ejector = "", // Optional; empty from which to eject "shells" if specified.
                 Scope = "dummy_camera", // Where line of sight checks are performed from. Must be clear of block collision.
@@ -84,9 +85,9 @@ namespace Scripts {
             },
             HardPoint = new HardPointDef
             {
-                PartName = "Basic Ballistic Cannon", // Name of the weapon in terminal, should be unique for each weapon definition that shares a SubtypeId (i.e. multiweapons).
-                DeviateShotAngle = 2f, // Projectile inaccuracy in degrees.
-                AimingTolerance = 3f, // How many degrees off target a turret can fire at. 0 - 180 firing angle.
+                PartName = "MEL-04 Mk1", // Name of the weapon in terminal, should be unique for each weapon definition that shares a SubtypeId (i.e. multiweapons).
+                DeviateShotAngle = 0.2f, // Projectile inaccuracy in degrees.
+                AimingTolerance = 1f, // How many degrees off target a turret can fire at. 0 - 180 firing angle.
                 AimLeadingPrediction = Accurate, // Level of turret aim prediction; Off (aim straight at target), Basic (doesn't account for target acceleration), Accurate, Advanced (these last two are identical)
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 second, etc..). Length of time the weapon continues firing after trigger is released - while a target is available.
                 AddToleranceToTracking = false, // Allows turret to track to the edge of the AimingTolerance cone instead of dead centre.
@@ -122,12 +123,12 @@ namespace Scripts {
                 },
                 HardWare = new HardwareDef
                 {
-                    RotateRate = 0.025f, // Max traversal speed of azimuth subpart in radians per tick (0.1 is approximately 360 degrees per second).
-                    ElevateRate = 0.025f, // Max traversal speed of elevation subpart in radians per tick.
+                    RotateRate = 0.05f, // Max traversal speed of azimuth subpart in radians per tick (0.1 is approximately 360 degrees per second).
+                    ElevateRate = 0.05f, // Max traversal speed of elevation subpart in radians per tick.
                     MinAzimuth = -180, // Az/Ele figures are in degrees
                     MaxAzimuth = 180,
                     MinElevation = -9,
-                    MaxElevation = 70,
+                    MaxElevation = 50,
                     HomeAzimuth = 0, // Default resting rotation angle
                     HomeElevation = 0, // Default resting elevation
                     InventorySize = 1f, // Inventory capacity in kL.
@@ -165,18 +166,18 @@ namespace Scripts {
                 },
                 Loading = new LoadingDef
                 {
-                    RateOfFire = 60, // Set this to 3600 for beam weapons. This is how fast your gun fires per minute.
-                    BarrelsPerShot = 2, // How many muzzles will fire a projectile per fire event.
+                    RateOfFire = 3600, // Set this to 3600 for beam weapons. This is how fast your gun fires per minute.
+                    BarrelsPerShot = 3, // How many muzzles will fire a projectile per fire event.
                     TrajectilesPerBarrel = 1, // Number of projectiles per muzzle per fire event.
                     SkipBarrels = 0, // Number of muzzles to skip after each fire event.
-                    ReloadTime = 600, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    MagsToLoad = 2, // Number of physical magazines to consume on reload.
+                    ReloadTime = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    MagsToLoad = 0, // Number of physical magazines to consume on reload.
                     DelayUntilFire = 0, // How long the weapon waits before shooting after being told to fire. Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    HeatPerShot = 250, // Heat generated per shot (BarrelsPerShot * HeatPerShot is the total heat per firing event).
-                    MaxHeat = 5000, // Max heat before weapon enters cooldown (70% of max heat).
-                    Cooldown = .80f, // Percentage of max heat to be under to start firing again after overheat; accepts 0 - 0.95
-                    HeatSinkRate = 200, // Amount of heat lost per second.
-                    HeatSinkRateOverheatMult = 1f, // Multiplier to LoadingDef.HeatSinkRate when the weapon is overheated. 0 disables, negative values are allowed.
+                    HeatPerShot = 25, // Heat generated per shot (BarrelsPerShot * HeatPerShot is the total heat per firing event).
+                    MaxHeat = 40000, // Max heat before weapon enters cooldown (70% of max heat).
+                    Cooldown = .10f, // Percentage of max heat to be under to start firing again after overheat; accepts 0 - 0.95
+                    HeatSinkRate = 3000, // Amount of heat lost per second.
+                    HeatSinkRateOverheatMult = 0.5f, // Multiplier to LoadingDef.HeatSinkRate when the weapon is overheated. 0 disables, negative values are allowed.
                                                    // Beware that negative values makes a weapon unusable should it overheat if it doesn't also have negative LoadingDef.HeatSinkRate, which does not work properly at the moment (heat does not update unless it has heat).
                     AllowOverheatShooting = false, // Disables weapon overheating disallowing the weapon to fire. Useful if you want DegradeRof but want the weapon to keep shooting even at max heat.
                     DegradeRof = false, // Progressively lower rate of fire when over 80% heat threshold (80% of max heat).
@@ -207,7 +208,7 @@ namespace Scripts {
                 Audio = new HardPointAudioDef
                 {
                     PreFiringSound = "", // Audio for warmup effect.
-                    FiringSound = "MWI_Arc_SKC_02_Mk1_Shoot", // Audio for firing.
+                    FiringSound = "MWI_Arc_TEC_01_Mk1_Shoot", // Audio for firing.
                     FiringSoundPerShot = true, // Whether to replay the sound for each shot, or just loop over the entire track while firing.
                     ReloadSound = "", // Sound SubtypeID, for when your Weapon is in a reloading state
                     NoAmmoSound = "", // Sound for if the user attempts to fire the gun without ammo
@@ -250,7 +251,7 @@ namespace Scripts {
                 },
             },
             Ammos = new[] {
-                MWI_SKC_02_Mk1_Ammo,
+                MWI_MEL_04_Mk1_Ammo,
             },
             //Animations = Weapon75_Animation,
             //Upgrades = UpgradeModules,

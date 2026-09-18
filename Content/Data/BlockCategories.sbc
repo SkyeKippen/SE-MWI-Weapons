@@ -1,0 +1,24 @@
+﻿<?xml version="1.0"	encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CategoryClasses>
+
+        <!-- Character "G-Menu" Categories -->
+
+        <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+            <Id>
+                <TypeId>GuiBlockCategoryDefinition</TypeId>
+                <SubtypeId/>
+            </Id>
+            <DisplayName>MWI Weapons</DisplayName>
+            <Name>MWIWeapons</Name>
+            <StrictSearch>true</StrictSearch>
+            <ItemIds>
+                <string>ConveyorSorter/MWI_TEC_01_Mk1</string>
+                <string>ConveyorSorter/MWI_SKC_02_Mk1</string>
+                <string>ConveyorSorter/MWI_TEL_03_Mk1</string>
+                <string>ConveyorSorter/MWI_MEL_04_Mk1</string>
+            </ItemIds>
+        </Category>
+
+    </CategoryClasses>
+</Definitions>
