@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+			<Id>
+				<TypeId>ConveyorSorter</TypeId>
+				<SubtypeId>MWI_SKC_02_Mk1</SubtypeId>
+			</Id>
+			<DisplayName>SKC-02 Mk1</DisplayName>
+			<Description>Optional Text Here</Description>
+			<Icon>Textures\GUI\Icons\Cubes\MWI_SKC_02_Mk1.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="3" y="1" z="3" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>Models\Cubes\large\MWI_SKC_02_Mk1.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="30" />
+				<Component Subtype="Construction" Count="50" />
+				<Component Subtype="Motor" Count="35" />
+				<Component Subtype="Computer" Count="100" />
+				<Component Subtype="Construction" Count="20" />
+				<Component Subtype="SteelPlate" Count="50" />
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="1.00" StartY="0.00" EndX="2.00" EndY="1.00" Enabled="false"/>
+				<MountPoint Side="Back" StartX="1.00" StartY="0.00" EndX="2.00" EndY="1.00" Enabled="false"/>
+				<MountPoint Side="Left" StartX="1.00" StartY="0.00" EndX="2.00" EndY="1.00" Enabled="false"/>
+				<MountPoint Side="Right" StartX="1.00" StartY="0.00" EndX="2.00" EndY="1.00" Enabled="false"/>
+				<MountPoint Side="Top" StartX="1.00" StartY="1.00" EndX="2.00" EndY="2.00" Enabled="false"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+			</MountPoints>
+			<BlockPairName>MWI_SKC_02_Mk1</BlockPairName>
+			<EdgeType>Light</EdgeType>
+			<BuildTimeSeconds>15</BuildTimeSeconds>
+			<WeaponDefinitionId Subtype="MWI_SKC_02_Mk1" />
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+		</Definition>
+	</CubeBlocks>
+</Definitions>

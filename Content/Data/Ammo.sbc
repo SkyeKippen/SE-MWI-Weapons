@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Ammos>
+        
+        <Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+            <Id>
+                <TypeId>AmmoDefinition</TypeId>
+                <SubtypeId>MWI_SKC_02_Mk1_Ammo</SubtypeId>
+            </Id>
+            <BasicProperties>
+                <DesiredSpeed>800</DesiredSpeed>
+                <SpeedVariance>0</SpeedVariance>
+                <MaxTrajectory>800</MaxTrajectory>
+                <BackkickForce>1000</BackkickForce>
+                <PhysicalMaterial>GunAutocannonBullet</PhysicalMaterial>
+                <ExplosiveDamageMultiplier>0.8</ExplosiveDamageMultiplier>
+                <DeathMessage>CauseOfDeath_HeavyWeapons</DeathMessage>
+            </BasicProperties>
+            <ProjectileProperties>
+                <ProjectileTrailScale>0.6</ProjectileTrailScale>
+                <ProjectileHitImpulse>3</ProjectileHitImpulse>
+                <ProjectileMassDamage>500</ProjectileMassDamage>
+                <ProjectileHealthDamage>85</ProjectileHealthDamage>
+                <HeadShot>true</HeadShot>
+            </ProjectileProperties>
+        </Ammo>
+        
+    </Ammos>
+</Definitions>

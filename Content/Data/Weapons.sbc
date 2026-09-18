@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Weapons>
+
+        <Weapon>
+            <Id>
+                <TypeId>WeaponDefinition</TypeId>
+                <SubtypeId>MWI_TEC_01_Mk1</SubtypeId>
+            </Id>
+            <ProjectileAmmoData RateOfFire="30" ShootSoundName="WepShipAutocannonShot" ShotsInBurst="1" />
+            <ReleaseTimeAfterFire>100</ReleaseTimeAfterFire>
+            <DeviateShotAngle>0.15</DeviateShotAngle>
+            <DeviateShotAngleAiming>0.15</DeviateShotAngleAiming>
+            <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+            <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+            <Effects>
+                <Effect Action="Shoot" Dummy="muzzle_projectile" Particle="Muzzle_Flash_Autocannon" Loop="true" InstantStop="false" OffsetX="0" OffsetY="0" OffsetZ="-1.6"/>
+                <Effect Action="Shoot" Dummy="None" Particle="Smoke_Autocannon" Loop="true" InstantStop="false" OffsetX="0" OffsetY="0" OffsetZ="-1.6"
+                        ParticleBirthStart="1" ParticleBirthMin="1" ParticleBirthMax="2" ParticleBirthDecrease="1" ParticleBirthIncrease="1" />
+            </Effects>
+            <AmmoMagazines>
+                <AmmoMagazine Subtype="Energy" />
+            </AmmoMagazines>
+            <ReloadTime>4000</ReloadTime>
+        </Weapon>
+
+        <Weapon>
+            <Id>
+                <TypeId>WeaponDefinition</TypeId>
+                <SubtypeId>MWI_SKC_02_Mk1</SubtypeId>
+            </Id>
+            <ProjectileAmmoData RateOfFire="30" ShootSoundName="WepShipAutocannonShot" ShotsInBurst="1" />
+            <ReleaseTimeAfterFire>100</ReleaseTimeAfterFire>
+            <DeviateShotAngle>0.15</DeviateShotAngle>
+            <DeviateShotAngleAiming>0.15</DeviateShotAngleAiming>
+            <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+            <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+            <Effects>
+                <Effect Action="Shoot" Dummy="muzzle_projectile" Particle="Muzzle_Flash_Autocannon" Loop="true" InstantStop="false" OffsetX="0" OffsetY="0" OffsetZ="-1.6"/>
+                <Effect Action="Shoot" Dummy="None" Particle="Smoke_Autocannon" Loop="true" InstantStop="false" OffsetX="0" OffsetY="0" OffsetZ="-1.6"
+                        ParticleBirthStart="1" ParticleBirthMin="1" ParticleBirthMax="2" ParticleBirthDecrease="1" ParticleBirthIncrease="1" />
+            </Effects>
+            <AmmoMagazines>
+                <AmmoMagazine Subtype="MWI_SKC_02_Mk1_AmmoMag" />
+            </AmmoMagazines>
+            <ReloadTime>4000</ReloadTime>
+        </Weapon>
+
+        <Weapon>
+            <Id>
+                <TypeId>WeaponDefinition</TypeId>
+                <SubtypeId>MWI_TEL_03_Mk1</SubtypeId>
+            </Id>
+            <ProjectileAmmoData RateOfFire="3600" ShootSoundName="WepShipAutocannonShot" ShotsInBurst="1" />
+            <ReleaseTimeAfterFire>100</ReleaseTimeAfterFire>
+            <DeviateShotAngle>0.15</DeviateShotAngle>
+            <DeviateShotAngleAiming>0.15</DeviateShotAngleAiming>
+            <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+            <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+            <Effects>
+                <Effect Action="Shoot" Dummy="muzzle_projectile" Particle="Muzzle_Flash_Autocannon" Loop="true" InstantStop="false" OffsetX="0" OffsetY="0" OffsetZ="-1.6"/>
+                <Effect Action="Shoot" Dummy="None" Particle="Smoke_Autocannon" Loop="true" InstantStop="false" OffsetX="0" OffsetY="0" OffsetZ="-1.6"
+                        ParticleBirthStart="1" ParticleBirthMin="1" ParticleBirthMax="2" ParticleBirthDecrease="1" ParticleBirthIncrease="1" />
+            </Effects>
+            <AmmoMagazines>
+                <AmmoMagazine Subtype="Energy" />
+            </AmmoMagazines>
+            <ReloadTime>4000</ReloadTime>
+        </Weapon>
+
+    </Weapons>
+
+</Definitions>
