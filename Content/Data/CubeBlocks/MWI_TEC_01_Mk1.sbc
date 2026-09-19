@@ -18,6 +18,7 @@
                 <Component Subtype="SteelPlate" Count="30" />
                 <Component Subtype="Construction" Count="50" />
                 <Component Subtype="Superconductor" Count="35" />
+                <Component Subtype="SmallTube" Count="20" />
                 <Component Subtype="Computer" Count="100" />
                 <Component Subtype="Construction" Count="20" />
                 <Component Subtype="SteelPlate" Count="50" />
