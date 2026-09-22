@@ -28,5 +28,31 @@
             <CanPlayerOrder>true</CanPlayerOrder>
         </AmmoMagazine>
 
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>MWI_TKM_06_Mk1_AmmoMag</SubtypeId>
+            </Id>
+            <DisplayName>TKM-06 Mk1 Missile Round</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\MWI_TKM_06_Mk1_Ammo.dds</Icon>
+            <Size>
+                <X>0.25</X>
+                <Y>0.2</Y>
+                <Z>0.2</Z>
+            </Size>
+            <Mass>40</Mass>
+            <Volume>24</Volume>
+            <Model>Models\Weapons\AutoCanonShellBox.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="MWI_TKM_06_Mk1_Ammo" />
+
+            <MinimumOfferAmount>30</MinimumOfferAmount>
+            <MaximumOfferAmount>300</MaximumOfferAmount>
+            <MinimumOrderAmount>10</MinimumOrderAmount>
+            <MaximumOrderAmount>1000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>
+
     </AmmoMagazines>
 </Definitions>
