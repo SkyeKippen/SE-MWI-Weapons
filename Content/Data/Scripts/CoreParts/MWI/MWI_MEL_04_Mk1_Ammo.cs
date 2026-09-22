@@ -45,8 +45,8 @@ namespace Scripts
             AmmoRound = "MWI_MEL_04_Mk1_Ammo", // Unique name used in server overrides and in the terminal (default).  Should be different for each ammoDef used by the same weapon.  Referred to for Shrapnel.
             TerminalName = "", // Optional terminal name for this ammo type, used when picking ammo/cycling consumables.  Safe to have duplicates across different ammo defs.
             HybridRound = false, // Use both a physical ammo magazine and energy per shot.
-            EnergyCost = 2f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.  If patterning ammos, only the main ammo (first fired) will count toward energy.
-            BaseDamage = 20, // Direct damage; one steel plate is worth 100.
+            EnergyCost = 20f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.  If patterning ammos, only the main ammo (first fired) will count toward energy.
+            BaseDamage = 5, // Direct damage; one steel plate is worth 100.
             BaseDamageCutoff = 50,  // Maximum amount of pen damage to apply per block hit.  Deducts from BaseDamage and uses DamageScales modifiers
                                     // Optional penetration mechanic to apply damage to blocks beyond the first hit, without requiring the block to be destroyed.  
                                     // Overwrites normal damage behavior of requiring a block to be destroyed before damage can continue.  0 disables. 
@@ -149,7 +149,7 @@ namespace Scripts
                 FallOff = new FallOffDef
                 {
                     Distance = 0f, // Distance at which damage begins falling off.
-                    MinMultipler = 0.5f, // Value from 0.0001f to 1f where 0.1f would be a min damage of 10% of base damage.
+                    MinMultipler = 0.25f, // Value from 0.0001f to 1f where 0.1f would be a min damage of 10% of base damage.
                 },
                 Grids = new GridSizeDef //If both of these values are -1, a 4x buff to SG weapons firing at LG and 0.25x debuff to LG weapons firing at SG will apply
                 {
@@ -158,14 +158,14 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = -1f, // Multiplier for damage against all armor. This is multiplied with the specific armor type multiplier (light, heavy).
+                    Armor = 0.5f, // Multiplier for damage against all armor. This is multiplied with the specific armor type multiplier (light, heavy).
                     Light = -1f, // Multiplier for damage against light armor.
-                    Heavy = -1f, // Multiplier for damage against heavy armor.
-                    NonArmor = -1f, // Multiplier for damage against every else.
+                    Heavy = 0.5f, // Multiplier for damage against heavy armor.
+                    NonArmor = 0.5f, // Multiplier for damage against every else.
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 1f, // Multiplier for damage against shields.
+                    Modifier = 2f, // Multiplier for damage against shields.
                     Type = Default, // Damage vs healing against shields; Default, Heal
                     BypassModifier = -1f, // 0-1 will bypass shields and apply that damage amount as a scaled %.  -1 is disabled.  -2 to -1 will alter the chance of penning a damaged shield, with -2 being a 100% reduction
                     HeatModifier = 1, // scales how much of the damage is converted to heat, negative values subtract heat.
@@ -209,10 +209,10 @@ namespace Scripts
             {
                 ByBlockHit = new ByBlockHitDef
                 {
-                    Enable = false,
-                    Radius = 5f, // Meters
-                    Damage = 5f,
-                    Depth = 1f, // Max depth of AOE effect, in meters. 0=disabled, and AOE effect will reach to a depth of the radius value
+                    Enable = true,
+                    Radius = 0f, // Meters
+                    Damage = 15f,
+                    Depth = 0f, // Max depth of AOE effect, in meters. 0=disabled, and AOE effect will reach to a depth of the radius value
                     MaxAbsorb = 64000f, // Soft cutoff for damage (total, against shields or grids), except for pooled falloff.  If pooled falloff, limits max damage per block.
                     Falloff = Pooled, // Options:
                     // NoFalloff applies the same damage to all blocks in radius
@@ -327,7 +327,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 900, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..). time begins at 0 and time must EXCEED this value to trigger "time > maxValue". Please have a value for this, It stops Bad things.
                 AccelPerSec = 0f, // Acceleration in Meters Per Second. Projectile starts on tick 0 at its parents (weapon/other projectiles) travel velocity.
-                DesiredSpeed = 1000, // voxel phasing if you go above 5100
+                DesiredSpeed = 1500, // voxel phasing if you go above 5100
                 MaxTrajectory = 5000f, // Max Distance the projectile or beam can Travel.
                 DeaccelTime = 0, // EWAR & Mines only- time to spend slowing down to stop at end of trajectory.  0 is instant stop
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable. Natural Gravity Only.
