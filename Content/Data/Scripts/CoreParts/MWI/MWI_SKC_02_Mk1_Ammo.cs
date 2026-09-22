@@ -674,7 +674,7 @@ namespace Scripts
                                        // If you want tracer but no trail, set width and color here to zero to disable tracer render while keeping trail
                         Length = 10f, // Length in meters to draw the tracer, goes from projectile center to projectile backwards * length
                         Width = 0.5f, // Width in arbitrary keen™ units
-                        Color = Color(red: 128f, green: 128f, blue: 0f, alpha: 1), // RBG 255 is Neon Glowing, 100 is Quite Bright.
+                        Color = Color(red: 32f, green: 8f, blue: 0f, alpha: 0.01f), // RBG 255 is Neon Glowing, 100 is Quite Bright.
                                                                              // For no glow, use 0-1
                         FactionColor = DontUse, // DontUse, Foreground, Background.
                         VisualFadeStart = 0, // Number of ticks the weapon has been firing before projectiles begin to fade their color

@@ -15,10 +15,13 @@
 			<ModelOffset x="0" y="0" z="0" />
 			<Model>Models\Cubes\large\MWI_TEC_01_Mk1.mwm</Model>
 			<Components>
-				<Component Subtype="SteelPlate" Count="30" />
-				<Component Subtype="Construction" Count="50" />
-				<Component Subtype="Motor" Count="35" />
-				<Component Subtype="Computer" Count="100" />
+				<Component Subtype="SteelPlate" Count="20" />
+				<Component Subtype="Construction" Count="10" />
+				<Component Subtype="Motor" Count="10" />
+				<Component Subtype="PowerCell" Count="10" />
+				<Component Subtype="Superconductor" Count="15" />
+				<Component Subtype="SmallTube" Count="20" />
+				<Component Subtype="Computer" Count="50" />
 				<Component Subtype="Construction" Count="20" />
 				<Component Subtype="SteelPlate" Count="50" />
 			</Components>

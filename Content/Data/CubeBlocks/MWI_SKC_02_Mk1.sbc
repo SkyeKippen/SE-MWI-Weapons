@@ -15,12 +15,13 @@
 			<ModelOffset x="0" y="0" z="0" />
 			<Model>Models\Cubes\large\MWI_SKC_02_Mk1.mwm</Model>
 			<Components>
-				<Component Subtype="SteelPlate" Count="30" />
+				<Component Subtype="SteelPlate" Count="50" />
 				<Component Subtype="Construction" Count="50" />
-				<Component Subtype="Motor" Count="35" />
+				<Component Subtype="Motor" Count="60" />
+				<Component Subtype="LargeTube" Count="20" />
 				<Component Subtype="Computer" Count="100" />
 				<Component Subtype="Construction" Count="20" />
-				<Component Subtype="SteelPlate" Count="50" />
+				<Component Subtype="SteelPlate" Count="150" />
 			</Components>
 			<CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -33,7 +34,7 @@
 			</MountPoints>
 			<BlockPairName>MWI_SKC_02_Mk1</BlockPairName>
 			<EdgeType>Light</EdgeType>
-			<BuildTimeSeconds>15</BuildTimeSeconds>
+			<BuildTimeSeconds>25</BuildTimeSeconds>
 			<WeaponDefinitionId Subtype="MWI_SKC_02_Mk1" />
 			<ResourceSinkGroup>Defense</ResourceSinkGroup>
 		</Definition>

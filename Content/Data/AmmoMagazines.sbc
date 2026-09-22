@@ -7,8 +7,8 @@
                 <TypeId>AmmoMagazine</TypeId>
                 <SubtypeId>MWI_SKC_02_Mk1_AmmoMag</SubtypeId>
             </Id>
-            <DisplayName>SKC-02-Mk1 Ammo Mag</DisplayName>
-            <Icon>Textures\GUI\Icons\ammo\AutoCanonShellBox.dds</Icon>
+            <DisplayName>SKC-02-Mk1 Shell</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\MWI_SKC_02_Mk1_Ammo.dds</Icon>
             <Size>
                 <X>0.25</X>
                 <Y>0.2</Y>

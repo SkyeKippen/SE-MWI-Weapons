@@ -15,12 +15,15 @@
             <ModelOffset x="0" y="0" z="0" />
             <Model>Models\Cubes\large\MWI_MEL_04_Mk1.mwm</Model>
             <Components>
-                <Component Subtype="SteelPlate" Count="30" />
-                <Component Subtype="Construction" Count="50" />
+                <Component Subtype="SteelPlate" Count="100" />
+                <Component Subtype="Construction" Count="100" />
                 <Component Subtype="Motor" Count="35" />
+                <Component Subtype="PowerCell" Count="50" />
+                <Component Subtype="Superconductor" Count="100" />
+                <Component Subtype="SmallTube" Count="50" />
                 <Component Subtype="Computer" Count="100" />
-                <Component Subtype="Construction" Count="20" />
-                <Component Subtype="SteelPlate" Count="50" />
+                <Component Subtype="Construction" Count="100" />
+                <Component Subtype="SteelPlate" Count="300" />
             </Components>
             <CriticalComponent Subtype="Computer" Index="0" />
             <MountPoints>
@@ -28,7 +31,7 @@
             </MountPoints>
             <BlockPairName>MWI_MEL_04_Mk1</BlockPairName>
             <EdgeType>Light</EdgeType>
-            <BuildTimeSeconds>15</BuildTimeSeconds>
+            <BuildTimeSeconds>45</BuildTimeSeconds>
             <WeaponDefinitionId Subtype="MWI_MEL_04_Mk1" />
             <ResourceSinkGroup>Defense</ResourceSinkGroup>
         </Definition>

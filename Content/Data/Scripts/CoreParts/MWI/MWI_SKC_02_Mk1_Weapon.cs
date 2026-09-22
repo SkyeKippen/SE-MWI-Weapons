@@ -84,9 +84,9 @@ namespace Scripts {
             },
             HardPoint = new HardPointDef
             {
-                PartName = "Basic Ballistic Cannon", // Name of the weapon in terminal, should be unique for each weapon definition that shares a SubtypeId (i.e. multiweapons).
-                DeviateShotAngle = 2f, // Projectile inaccuracy in degrees.
-                AimingTolerance = 3f, // How many degrees off target a turret can fire at. 0 - 180 firing angle.
+                PartName = "SKC-02 Mk1", // Name of the weapon in terminal, should be unique for each weapon definition that shares a SubtypeId (i.e. multiweapons).
+                DeviateShotAngle = 0.25f, // Projectile inaccuracy in degrees.
+                AimingTolerance = 2.5f, // How many degrees off target a turret can fire at. 0 - 180 firing angle.
                 AimLeadingPrediction = Accurate, // Level of turret aim prediction; Off (aim straight at target), Basic (doesn't account for target acceleration), Accurate, Advanced (these last two are identical)
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 second, etc..). Length of time the weapon continues firing after trigger is released - while a target is available.
                 AddToleranceToTracking = false, // Allows turret to track to the edge of the AimingTolerance cone instead of dead centre.
@@ -122,12 +122,12 @@ namespace Scripts {
                 },
                 HardWare = new HardwareDef
                 {
-                    RotateRate = 0.025f, // Max traversal speed of azimuth subpart in radians per tick (0.1 is approximately 360 degrees per second).
-                    ElevateRate = 0.025f, // Max traversal speed of elevation subpart in radians per tick.
+                    RotateRate = 0.01f, // Max traversal speed of azimuth subpart in radians per tick (0.1 is approximately 360 degrees per second).
+                    ElevateRate = 0.005f, // Max traversal speed of elevation subpart in radians per tick.
                     MinAzimuth = -180, // Az/Ele figures are in degrees
                     MaxAzimuth = 180,
-                    MinElevation = -9,
-                    MaxElevation = 70,
+                    MinElevation = -5,
+                    MaxElevation = 60,
                     HomeAzimuth = 0, // Default resting rotation angle
                     HomeElevation = 0, // Default resting elevation
                     InventorySize = 1f, // Inventory capacity in kL.
