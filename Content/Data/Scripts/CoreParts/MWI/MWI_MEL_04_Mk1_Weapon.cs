@@ -208,7 +208,7 @@ namespace Scripts {
                 Audio = new HardPointAudioDef
                 {
                     PreFiringSound = "", // Audio for warmup effect.
-                    FiringSound = "MWI_Arc_TEL_04_Mk1_Shoot", // Audio for firing.
+                    FiringSound = "MWI_Arc_MEL_04_Mk1_Shoot", // Audio for firing.
                     FiringSoundPerShot = true, // Whether to replay the sound for each shot, or just loop over the entire track while firing.
                     ReloadSound = "", // Sound SubtypeID, for when your Weapon is in a reloading state
                     NoAmmoSound = "", // Sound for if the user attempts to fire the gun without ammo

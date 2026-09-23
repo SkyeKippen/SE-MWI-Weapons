@@ -12,14 +12,14 @@
 Not all sections are strictly required for all weapons, but generally having all sections except Custom Animation is advised.
 
 ### Theme
-???
+Harder Sci-Fi, doesn't focus on any specific type of weapon.
 
 ### Naming Scheme
-SKC_01_Mk1 "Common Name"
+SKC_01_Mk1 "Common Name"\
 S - Small (Size)\
-K - Kinetic (Damage Type (Kinetic/Energy/Mixed/Hybrid))\
+K - Kinetic (Damage Type (Kinetic/Energy/Hybrid))\
 C - Cannon (Cannon, Laser, Repeater, Missile, Gatling, Point-Defence, Dumb, Burst, EWAR)\
-01, 02, 03... - Iterates with each new weapon design regardless of prefix\
+01 - 01, 02, 03... - Iterates with each new weapon design regardless of prefix\
 Mk1 - Mk1, Mk2, Mk3 - Specifically for the same style/design of weapon, each Mk# up is generally a straight upgrade
 
 ### Size Guidelines
