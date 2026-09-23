@@ -48,10 +48,10 @@ W - Super Weapon (Special)
 - `SKC_02_Mk1 ""`
 - `TEL_03_Mk1 ""`
 - `MEL_04_Mk1 ""`
+- `TKM_06_Mk1 ""`
 
 
 #### WIP
-- `TKM_06_Mk1 ""` (needs testing)
 
 
 #### Not Started
@@ -65,4 +65,4 @@ W - Super Weapon (Special)
 - `TEL_03_Mk1 ""` - Tiny Energy Laser Mk1 - Turret - A Laser turret with long firing length, but relatively low damage.
 - `MEL_04_Mk1 ""` - Medium Energy Laser Mk1 - Turret - Triple-barreled laser turret with long range but relatively low damage.
 - `CEE_05_Mk1 ""` - Capital Energy EWAR-EMP Mk1 - Fixed - Single-Shot Ion Cannon capable of temporarily disabling small ships or sections of larger ships.
-- `TKM_06_Mk1 ""` - Tiny Kinetic Missile Mk1 - Fixed - 8 Micro Missile burst only capable of targeting small grids. Individual low damage.
+- `TKM_06_Mk1 ""` - Tiny Kinetic Missile Mk1 - Fixed - 8 Micro Missile burst designed for targeting small grids. Individual low damage.
