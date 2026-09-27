@@ -3,6 +3,7 @@
     <BlueprintClassEntries>
         <!--AMMUNITION-->
         <Entry Class="EliteConsumables" BlueprintSubtypeId="MWI_SKC_02_Mk1_AmmoBP" />
+        <Entry Class="EliteConsumables" BlueprintSubtypeId="MWI_TKM_06_Mk1_AmmoBP" />
     </BlueprintClassEntries>
     
     <Blueprints>
@@ -20,7 +21,24 @@
                 <Item Amount="8" TypeId="Ingot" SubtypeId="Magnesium" />
             </Prerequisites>
             <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="MWI_SKC_02_Mk1_AmmoMag" />
-            <BaseProductionTimeInSeconds>30</BaseProductionTimeInSeconds>
+            <BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+        </Blueprint>
+
+        <Blueprint>
+            <Id>
+                <TypeId>BlueprintDefinition</TypeId>
+                <SubtypeId>MWI_TKM_06_Mk1_AmmoBP</SubtypeId>
+            </Id>
+            <DisplayName>TKM-06 Mk1 Swarm Missile</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\MWI_TKM_06_Mk1_Ammo.dds</Icon>
+            <Prerequisites>
+                <Item Amount="8" TypeId="Ingot" SubtypeId="Iron" />
+                <Item Amount="2" TypeId="Ingot" SubtypeId="Nickel" />
+                <Item Amount="5" TypeId="Ingot" SubtypeId="Silicon" />
+                <Item Amount="1" TypeId="Ingot" SubtypeId="Magnesium" />
+            </Prerequisites>
+            <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="MWI_TKM_06_Mk1_AmmoMag" />
+            <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
         </Blueprint>
 
     </Blueprints>

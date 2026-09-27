@@ -32,6 +32,11 @@
 				<MountPoint Side="Top" StartX="1.00" StartY="1.00" EndX="2.00" EndY="2.00" Enabled="false"/>
 				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
 			</MountPoints>
+			<InventorySize>
+				<X>0.5</X>
+				<Y>1</Y>
+				<Z>1</Z>
+			</InventorySize>
 			<BlockPairName>MWI_SKC_02_Mk1</BlockPairName>
 			<EdgeType>Light</EdgeType>
 			<BuildTimeSeconds>25</BuildTimeSeconds>
