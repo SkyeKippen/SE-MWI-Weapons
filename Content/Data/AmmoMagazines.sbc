@@ -40,8 +40,8 @@
                 <Y>0.2</Y>
                 <Z>0.2</Z>
             </Size>
-            <Mass>40</Mass>
-            <Volume>24</Volume>
+            <Mass>8</Mass>
+            <Volume>3</Volume>
             <Model>Models\Weapons\AutoCanonShellBox.mwm</Model>
             <PhysicalMaterial>Ammo</PhysicalMaterial>
             <Capacity>1</Capacity>

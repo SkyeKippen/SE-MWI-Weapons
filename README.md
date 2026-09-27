@@ -51,7 +51,7 @@ W - Super Weapon (Special)
 - `TKM_06_Mk1 ""`
 
 
-#### WIP
+#### Non-Functional
 
 
 #### Not Started

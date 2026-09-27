@@ -126,7 +126,7 @@ namespace Scripts {
                     MinAzimuth = -180, // Az/Ele figures are in degrees
                     MaxAzimuth = 180,
                     MinElevation = -9,
-                    MaxElevation = 50,
+                    MaxElevation = 60,
                     HomeAzimuth = 0, // Default resting rotation angle
                     HomeElevation = 0, // Default resting elevation
                     InventorySize = 1f, // Inventory capacity in kL.
