@@ -372,7 +372,7 @@ namespace Scripts
             },
             AmmoGraphics = new GraphicDef
             {
-                ModelName = "", // Model Path goes here. (Not Required)  "\\Models\\Ammo\\Starcore_Arrow_Missile_Large"
+                ModelName = "\\Models\\Ammo\\MWI_TKM_06_Mk1_Ammo", // Model Path goes here. (Not Required)  "\\Models\\Ammo\\Starcore_Arrow_Missile_Large"
                 VisualProbability = 1f, // 0-1 % chance of AV appearing (controls all audio AND visual)
                 ShieldHitDraw = false,
                 Decals = new DecalDef
@@ -491,7 +491,7 @@ namespace Scripts
                                        // If you want tracer but no trail, set width and color here to zero to disable tracer render while keeping trail
                         Length = 5f, // Length in meters to draw the tracer, goes from projectile center to projectile backwards * length
                         Width = 0.1f, // Width in arbitrary keen™ units
-                        Color = Color(red: 32f, green: 32f, blue: 32f, alpha: 0.1f), // RBG 255 is Neon Glowing, 100 is Quite Bright.
+                        Color = Color(red: 2f, green: 2f, blue: 2f, alpha: 0.01f), // RBG 255 is Neon Glowing, 100 is Quite Bright.
                                                                              // For no glow, use 0-1
                         FactionColor = DontUse, // DontUse, Foreground, Background.
                         VisualFadeStart = 0, // Number of ticks the weapon has been firing before projectiles begin to fade their color

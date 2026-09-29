@@ -14,9 +14,9 @@
                 <Y>0.2</Y>
                 <Z>0.2</Z>
             </Size>
-            <Mass>40</Mass>
-            <Volume>24</Volume>
-            <Model>Models\Weapons\AutoCanonShellBox.mwm</Model>
+            <Mass>120</Mass>
+            <Volume>120</Volume>
+            <Model>Models\Ammo\MWI_SKC_02_Mk1_Shell.mwm</Model>
             <PhysicalMaterial>Ammo</PhysicalMaterial>
             <Capacity>1</Capacity>
             <AmmoDefinitionId Subtype="MWI_SKC_02_Mk1_Ammo" />
@@ -40,9 +40,9 @@
                 <Y>0.2</Y>
                 <Z>0.2</Z>
             </Size>
-            <Mass>8</Mass>
-            <Volume>3</Volume>
-            <Model>Models\Weapons\AutoCanonShellBox.mwm</Model>
+            <Mass>12</Mass>
+            <Volume>4</Volume>
+            <Model>Models\Ammo\MWI_TKM_06_Mk1_Ammo.mwm</Model>
             <PhysicalMaterial>Ammo</PhysicalMaterial>
             <Capacity>1</Capacity>
             <AmmoDefinitionId Subtype="MWI_TKM_06_Mk1_Ammo" />

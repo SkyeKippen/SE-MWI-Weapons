@@ -327,7 +327,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 1500, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..). time begins at 0 and time must EXCEED this value to trigger "time > maxValue". Please have a value for this, It stops Bad things.
                 AccelPerSec = 0f, // Acceleration in Meters Per Second. Projectile starts on tick 0 at its parents (weapon/other projectiles) travel velocity.
-                DesiredSpeed = 200, // voxel phasing if you go above 5100
+                DesiredSpeed = 400, // voxel phasing if you go above 5100
                 MaxTrajectory = 4000f, // Max Distance the projectile or beam can Travel.
                 DeaccelTime = 0, // EWAR & Mines only- time to spend slowing down to stop at end of trajectory.  0 is instant stop
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable. Natural Gravity Only.
@@ -555,7 +555,7 @@ namespace Scripts
             },
             AmmoGraphics = new GraphicDef
             {
-                ModelName = "", // Model Path goes here. (Not Required)  "\\Models\\Ammo\\Starcore_Arrow_Missile_Large"
+                ModelName ="\\Models\\Ammo\\MWI_SKC_02_Mk1_Shell", // Model Path goes here. (Not Required)  "\\Models\\Ammo\\Starcore_Arrow_Missile_Large"
                 VisualProbability = 1f, // 0-1 % chance of AV appearing (controls all audio AND visual)
                 ShieldHitDraw = false,
                 Decals = new DecalDef
@@ -673,7 +673,7 @@ namespace Scripts
                         Enable = true, // If this is false, Trail is also not used.
                                        // If you want tracer but no trail, set width and color here to zero to disable tracer render while keeping trail
                         Length = 10f, // Length in meters to draw the tracer, goes from projectile center to projectile backwards * length
-                        Width = 0.5f, // Width in arbitrary keen™ units
+                        Width = 0.3f, // Width in arbitrary keen™ units
                         Color = Color(red: 32f, green: 8f, blue: 0f, alpha: 0.01f), // RBG 255 is Neon Glowing, 100 is Quite Bright.
                                                                              // For no glow, use 0-1
                         FactionColor = DontUse, // DontUse, Foreground, Background.

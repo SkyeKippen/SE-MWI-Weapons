@@ -31,6 +31,28 @@ X - X-Large (Up to 9x9x9)\
 C - Capital (Anything larger)\
 W - Super Weapon (Special)
 
+### Tallies (Existing Weapons Only)
+LG: 5\
+SG: 0
+
+Kinetic: 2\
+Energy: 3\
+EWAR: 0
+
+Cannon: 2\
+Laser: 2\
+Repeater/Autocannon: 0\
+Gatling/PDC: 0\
+Missile: 1
+
+Tiny: 3\
+Small: 1\
+Medium: 1\
+Large: 0\
+X-Large: 0\
+Capital: 0\
+Super Weapon: 0
+
 ### Full Weapon List
 - `TEC_01_Mk1 ""`
 - `SKC_02_Mk1 ""`
